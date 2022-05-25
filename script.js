@@ -1,0 +1,34 @@
+window.onload = function(){
+  let bgColor1 = document.querySelectorAll('.color')[0];
+  bgColor1.style.backgroundColor = bgColor1.id;
+  let bgColor2 = document.querySelectorAll('.color')[1];
+  bgColor2.style.backgroundColor = bgColor2.id;
+  let bgColor3 = document.querySelectorAll('.color')[2];
+  bgColor3.style.backgroundColor = bgColor3.id;
+  let bgColor4 = document.querySelectorAll('.color')[3];
+  bgColor4.style.backgroundColor = bgColor4.id;
+
+    
+
+}
+
+let ulistC = document.createElement('ul');
+ulistC.id = 'linha';
+document.getElementById('pixel-board').appendChild(ulistC);
+
+for(i = 0; i <5; i += 1) {
+  let list = document.createElement('li');
+  list.id = i
+
+  document.getElementById('linha').appendChild(list);
+
+}
+
+for(i = 0; i < 5; i += 1) {
+  for(i2 = 0; i2 < 5; i2 += 1) {
+    let divs = document.createElement('div');
+    divs.className = "pixel";
+
+    document.getElementById(i).appendChild(divs);
+  }
+}
