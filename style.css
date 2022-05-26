@@ -34,3 +34,11 @@ ul {
 li {
   line-height: 0px;
 }
+
+#pixel-board {
+  margin: 20px;
+  margin-left: 35%;
+  margin-right: 35%;
+  border: black solid 1px;
+  padding: 20px;
+}

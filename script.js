@@ -40,6 +40,19 @@ for (let index = 0; index < 25; index += 1) {
     const evento = event;
     const selected = document.querySelector('.selected');
     evento.target.style.backgroundColor = selected.id;
-    console.log(selected);
   });
 }
+const areaDosBotoes = document.getElementById('botoes');
+const createButton = document.createElement('button');
+createButton.id = 'clear-board';
+createButton.innerText = 'Limpar';
+areaDosBotoes.appendChild(createButton);
+
+const botaoL = document.getElementById('clear-board');
+botaoL.addEventListener('click', () => {
+  const pixel = document.querySelectorAll('.pixel');
+  pixel.forEach((event) => {
+    const evento = event;
+    evento.style.backgroundColor = 'white';
+  });
+});
