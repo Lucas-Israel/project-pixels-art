@@ -33,3 +33,13 @@ corPal.addEventListener('click', (event) => {
     event.target.classList.add('selected');
   }
 });
+
+for (let index = 0; index < 25; index += 1) {
+  const addCorPix = document.getElementsByClassName('pixel')[index];
+  addCorPix.addEventListener('click', (event) => {
+    const evento = event;
+    const selected = document.querySelector('.selected');
+    evento.target.style.backgroundColor = selected.id;
+    console.log(selected);
+  });
+}
