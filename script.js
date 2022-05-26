@@ -40,6 +40,5 @@ for (let index = 0; index < 25; index += 1) {
     const evento = event;
     const selected = document.querySelector('.selected');
     evento.target.style.backgroundColor = selected.id;
-    console.log(selected);
   });
 }
