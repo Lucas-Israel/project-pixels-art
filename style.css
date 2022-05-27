@@ -38,7 +38,8 @@ body {
 }
 
 #pixel-board {
-   --size: 5;
+  
+  --size: 5;
   height: auto;
   width: auto;
   display: grid;
