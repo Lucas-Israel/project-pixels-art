@@ -1,5 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   text-align: center;
+  background-color: rgb(136, 136, 136);
 }
 
 .color {
@@ -11,13 +17,12 @@ body {
 
 .pixel {
   background-color: white;
-  border: black solid 1px;
-  width: 40px;
   height: 40px;
-  display: inline-block;
+  width: 40px;
+  border: black solid 1px;
 }
 
-#color-palette {
+#color-palette, #botoes {
   margin: 20px;
   border: black solid 1px;
   padding: 5px;
@@ -25,20 +30,29 @@ body {
   margin-right: 35%;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  line-height: 0px;
+#boardPai {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #pixel-board {
-  margin: 20px;
-  margin-left: 35%;
-  margin-right: 35%;
+  --size: 5;
+  height: auto;
+  width: auto;
+  display: grid;
+  grid-template-columns: repeat(var(--size), 1fr);
+  grid-template-rows: repeat(var(--size), 1fr);
   border: black solid 1px;
-  padding: 20px;
+}
+
+#board-size {
+  width: 55px;
+}
+
+#clear-board, #board-size, #generate-board {
+  margin: 6px;
+  width: 100px;
+  text-align: center;
 }
