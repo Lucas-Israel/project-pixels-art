@@ -1,29 +1,22 @@
-const cor0 = document.querySelectorAll('.color')[0];
-const cor1 = document.querySelectorAll('.color')[1];
-const cor2 = document.querySelectorAll('.color')[2];
-const cor3 = document.querySelectorAll('.color')[3];
+const cor = document.querySelectorAll('.color');
 const container = document.querySelector('#pixel-board');
 const botoes = document.getElementById('botoes');
 const corPal = document.getElementById('color-palette');
+const corBody = document.getElementById('body');
 
-// chamada de elemento /\
+cor[0].style.backgroundColor = 'black';
 
-cor0.style.backgroundColor = 'black';
-
-// cores randomicas /\
-
-function corNaBox(cor) {
-  const corX = cor;
+function corNaBox(corN) {
+  const corX = corN;
   const n = Math.round(Math.random() * 256);
   const m = Math.round(Math.random() * 256);
   const o = Math.round(Math.random() * 256);
   corX.style.backgroundColor = `rgb(${n}, ${m}, ${o})`;
 }
-corNaBox(cor1);
-corNaBox(cor2);
-corNaBox(cor3);
-
-// randomizador /\
+corNaBox(cor[1]);
+corNaBox(cor[2]);
+corNaBox(cor[3]);
+corNaBox(corBody);
 
 function criarPixels(size) {
   container.style.setProperty('--size', size);
@@ -33,9 +26,6 @@ function criarPixels(size) {
     container.appendChild(div);
   }
 }
-// criarPixels(numero);
-
-// criador de pixel /\
 
 function seletorDeClasse() {
   corPal.addEventListener('click', (event) => {
@@ -46,9 +36,6 @@ function seletorDeClasse() {
     }
   });
 }
-// seletorDeClasse();
-
-// seletor de classe /\
 
 function pintadorDePixel(size) {
   for (let index = 0; index < size * size; index += 1) {
@@ -60,9 +47,6 @@ function pintadorDePixel(size) {
     });
   }
 }
-// pintadorDePixel(numero);
-
-// pinta os pixels /\
 
 function criadorDeBotao() {
   for (let index = 0; index < 1; index += 1) {
@@ -70,9 +54,6 @@ function criadorDeBotao() {
     botoes.appendChild(createButton);
   }
 }
-// criadorDeBotao();
-
-// cria botoes /\
 
 function criaAbaInput() {
   const createInput = document.createElement('input');
@@ -82,13 +63,6 @@ function criaAbaInput() {
   createInput.min = 1;
   botoes.appendChild(createInput);
 }
-// criaAbaInput();
-
-// cria aba de input /\
-
-// criadorDeBotao();
-
-// segundo botao /\
 
 function nomeando() {
   const botao = document.querySelectorAll('button');
@@ -97,9 +71,6 @@ function nomeando() {
   botao[1].id = 'generate-board';
   botao[1].innerText = 'Aumentar, VQV';
 }
-// nomeando();
-
-// nomeia botoes e input /\
 
 function limpando() {
   const botaoL = document.getElementById('clear-board');
@@ -111,9 +82,6 @@ function limpando() {
     });
   });
 }
-// limpando();
-
-// limpa o board /\
 
 function deleta() {
   const pixel = document.querySelectorAll('.pixel');
@@ -122,8 +90,6 @@ function deleta() {
     evento.remove();
   });
 }
-
-// deleta pixels /\
 
 function alertaDoInput() {
   const ouveImput = document.querySelector('#board-size');
@@ -143,9 +109,6 @@ function alertaDoInput() {
     pintadorDePixel(ouveImput.value);
   });
 }
-// alertaDoInput();
-
-// ordem
 
 seletorDeClasse();
 criadorDeBotao();
