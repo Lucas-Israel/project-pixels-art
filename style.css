@@ -22,7 +22,7 @@ body {
   border: black solid 1px;
 }
 
-#color-palette, #botoes {
+#color-palette , #botoes {
   margin: 20px;
   border: black solid 1px;
   padding: 5px;
@@ -38,7 +38,7 @@ body {
 }
 
 #pixel-board {
-  --size: 5;
+   --size: 5;
   height: auto;
   width: auto;
   display: grid;
@@ -51,7 +51,7 @@ body {
   width: 55px;
 }
 
-#clear-board, #board-size, #generate-board {
+#clear-board , #board-size , #generate-board {
   margin: 6px;
   width: 100px;
   text-align: center;
