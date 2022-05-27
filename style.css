@@ -21,7 +21,7 @@ body {
   border: black solid 1px;
 }
 
-#color-palette, #botoes, #title {
+#color-palette , #botoes , #title {
   margin: 20px;
   border: black solid 2px;
   padding: 5px;
@@ -68,10 +68,4 @@ body {
 
 .selected {
   border-radius: 50%;
-  box-shadow: 
-    0 0 50px white,            /* outer white */
-    -10px 0 80px fuchsia,        /* outer left magenta */
-    10px 0 80px aqua;
 }
-
-/* https://codersblock.com/blog/creating-glow-effects-with-css/ */
