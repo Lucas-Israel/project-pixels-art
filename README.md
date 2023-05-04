@@ -26,7 +26,7 @@ style.css
 ```
 git clone git@github.com:Lucas-Israel/project-pixels-art.git
 npm install
-abrir index.html no browser
+rodar index.html
 ```
 
 # :calendar: Datas para desenvolvimento
