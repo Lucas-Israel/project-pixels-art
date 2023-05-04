@@ -4,6 +4,13 @@
 1. Implementar um editor de arte com pixels em que a pessoa usuária poderá escolher uma cor em uma paleta de cores e poderá pintar o que quiser em um quadro branco
 
 ```
+<details>
+  <summary>:speech_balloon: Exemplo de funcionamento</summary>
+  
+![gif exemplo](https://github.com/Lucas-Israel/project-pixels-art/blob/main/art-with-pixels.gif?raw=true)
+  
+</details>
+
 # :heavy_exclamation_mark: Arquivos desenvolvidos nesse projeto:
 
 ```
