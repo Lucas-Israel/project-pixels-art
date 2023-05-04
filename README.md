@@ -26,7 +26,6 @@ style.css
 ```
 git clone git@github.com:Lucas-Israel/project-pixels-art.git
 npm install
-npm test
 abrir index.html no browser
 ```
 
